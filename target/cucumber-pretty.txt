@@ -1,0 +1,30 @@
+Feature: Validate Pet component REST APIs
+
+  @tag1
+  Scenario: Validate Pet Store Inventory                         [90m# Feature_Repo/POC/Test001.feature:4[0m
+    [32mGiven [0m[32mURI is "[0m[32m[1mhttp://petstore.swagger.io/v2/store/inventory[0m[32m"[0m [90m# PocTest.uri_is(String)[0m
+    [32mWhen [0m[32mPerform GET request[0m                                     [90m# PocTest.perform_GET_request()[0m
+    [32mThen [0m[32mValidate response "[0m[32m[1m200[0m[32m"[0m                                 [90m# PocTest.validate_response(String)[0m
+
+  @tag2
+  Scenario Outline: Place an order for a pet                 [90m# Feature_Repo/POC/Test001.feature:10[0m
+    [36mGiven [0m[36mURI is "http://petstore.swagger.io/v2/store/order"[0m
+    [36mThen [0m[36mUse sheet "Sample" and <Row> and <Column>[0m
+    [36mWhen [0m[36mPerform POST request[0m
+    [36mThen [0m[36mverify the <ResponseCode>[0m
+
+    Examples: 
+
+  @tag2
+  Scenario Outline: Place an order for a pet                 [90m# Feature_Repo/POC/Test001.feature:18[0m
+    [32mGiven [0m[32mURI is "[0m[32m[1mhttp://petstore.swagger.io/v2/store/order[0m[32m"[0m [90m# PocTest.uri_is(String)[0m
+    [32mThen [0m[32mUse sheet "[0m[32m[1mSample[0m[32m" and [0m[32m[1m0[0m[32m and [0m[32m[1m0[0m                      [90m# PocTest.use_sheet_and_and(String,int,int)[0m
+    [32mWhen [0m[32mPerform POST request[0m                                [90m# PocTest.perform_POST_request()[0m
+    [32mThen [0m[32mverify the [0m[32m[1m200[0m                                      [90m# PocTest.verify_the(int)[0m
+
+  @tag2
+  Scenario Outline: Place an order for a pet                 [90m# Feature_Repo/POC/Test001.feature:19[0m
+    [32mGiven [0m[32mURI is "[0m[32m[1mhttp://petstore.swagger.io/v2/store/order[0m[32m"[0m [90m# PocTest.uri_is(String)[0m
+    [32mThen [0m[32mUse sheet "[0m[32m[1mSample[0m[32m" and [0m[32m[1m0[0m[32m and [0m[32m[1m2[0m                      [90m# PocTest.use_sheet_and_and(String,int,int)[0m
+    [32mWhen [0m[32mPerform POST request[0m                                [90m# PocTest.perform_POST_request()[0m
+    [32mThen [0m[32mverify the [0m[32m[1m400[0m                                      [90m# PocTest.verify_the(int)[0m

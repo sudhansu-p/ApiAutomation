@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="3.495103">
+<testcase classname="Validate Pet component REST APIs" name="Validate Pet Store Inventory" time="2.304656">
+<system-out><![CDATA[Given URI is "http://petstore.swagger.io/v2/store/inventory"................passed
+When Perform GET request....................................................passed
+Then Validate response "200"................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Validate Pet component REST APIs" name="Place an order for a pet" time="0.705646">
+<system-out><![CDATA[Given URI is "http://petstore.swagger.io/v2/store/order"....................passed
+Then Use sheet "Sample" and 0 and 0.........................................passed
+When Perform POST request...................................................passed
+Then verify the 200.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Validate Pet component REST APIs" name="Place an order for a pet 2" time="0.484801">
+<system-out><![CDATA[Given URI is "http://petstore.swagger.io/v2/store/order"....................passed
+Then Use sheet "Sample" and 0 and 2.........................................passed
+When Perform POST request...................................................passed
+Then verify the 400.........................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

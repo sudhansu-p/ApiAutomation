@@ -1,0 +1,336 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 136161583,
+              "status": "passed"
+            },
+            "match": {
+              "location": "PocTest.StatupConfig()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Validate Pet Store Inventory",
+        "description": "",
+        "id": "validate-pet-component-rest-apis;validate-pet-store-inventory",
+        "after": [
+          {
+            "result": {
+              "duration": 246901350,
+              "status": "passed"
+            },
+            "match": {
+              "location": "PocTest.TearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 82389256,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "URI is \"http://petstore.swagger.io/v2/store/inventory\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://petstore.swagger.io/v2/store/inventory",
+                  "offset": 8
+                }
+              ],
+              "location": "PocTest.uri_is(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1769584555,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Perform GET request",
+            "match": {
+              "location": "PocTest.perform_GET_request()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 69619511,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Validate response \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 19
+                }
+              ],
+              "location": "PocTest.validate_response(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@tag1"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 690454,
+              "status": "passed"
+            },
+            "match": {
+              "location": "PocTest.StatupConfig()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "Place an order for a pet",
+        "description": "",
+        "id": "validate-pet-component-rest-apis;place-an-order-for-a-pet;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 119640222,
+              "status": "passed"
+            },
+            "match": {
+              "location": "PocTest.TearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 483639,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "URI is \"http://petstore.swagger.io/v2/store/order\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://petstore.swagger.io/v2/store/order",
+                  "offset": 8
+                }
+              ],
+              "location": "PocTest.uri_is(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 170730524,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Use sheet \"Sample\" and 0 and 0",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sample",
+                  "offset": 11
+                },
+                {
+                  "val": "0",
+                  "offset": 23
+                },
+                {
+                  "val": "0",
+                  "offset": 29
+                }
+              ],
+              "location": "PocTest.use_sheet_and_and(String,int,int)"
+            },
+            "matchedColumns": [
+              1,
+              2
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 406304917,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Perform POST request",
+            "match": {
+              "location": "PocTest.perform_POST_request()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7796168,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "verify the 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 11
+                }
+              ],
+              "location": "PocTest.verify_the(int)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 9,
+            "name": "@tag2"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 704336,
+              "status": "passed"
+            },
+            "match": {
+              "location": "PocTest.StatupConfig()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "Place an order for a pet",
+        "description": "",
+        "id": "validate-pet-component-rest-apis;place-an-order-for-a-pet;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 84066120,
+              "status": "passed"
+            },
+            "match": {
+              "location": "PocTest.TearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 430864,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "URI is \"http://petstore.swagger.io/v2/store/order\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://petstore.swagger.io/v2/store/order",
+                  "offset": 8
+                }
+              ],
+              "location": "PocTest.uri_is(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7848846,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Use sheet \"Sample\" and 0 and 2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sample",
+                  "offset": 11
+                },
+                {
+                  "val": "0",
+                  "offset": 23
+                },
+                {
+                  "val": "2",
+                  "offset": 29
+                }
+              ],
+              "location": "PocTest.use_sheet_and_and(String,int,int)"
+            },
+            "matchedColumns": [
+              1,
+              2
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 390130793,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Perform POST request",
+            "match": {
+              "location": "PocTest.perform_POST_request()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1620488,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "verify the 400",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 11
+                }
+              ],
+              "location": "PocTest.verify_the(int)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 9,
+            "name": "@tag2"
+          }
+        ]
+      }
+    ],
+    "name": "Validate Pet component REST APIs",
+    "description": "",
+    "id": "validate-pet-component-rest-apis",
+    "keyword": "Feature",
+    "uri": "Feature_Repo/POC/Test001.feature"
+  }
+]

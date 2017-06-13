@@ -1,0 +1,157 @@
+[
+  {
+    "source": "^Perform GET request$",
+    "steps": [
+      {
+        "name": "Perform GET request",
+        "aggregatedDurations": {
+          "average": 1.769584555,
+          "median": 1.769584555
+        },
+        "durations": [
+          {
+            "duration": 1.769584555,
+            "location": "Feature_Repo/POC/Test001.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^URI is \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "URI is \"http://petstore.swagger.io/v2/store/inventory\"",
+        "aggregatedDurations": {
+          "average": 0.082389256,
+          "median": 0.082389256
+        },
+        "durations": [
+          {
+            "duration": 0.082389256,
+            "location": "Feature_Repo/POC/Test001.feature:5"
+          }
+        ]
+      },
+      {
+        "name": "URI is \"http://petstore.swagger.io/v2/store/order\"",
+        "aggregatedDurations": {
+          "average": 0.000457251,
+          "median": 0.000457251
+        },
+        "durations": [
+          {
+            "duration": 0.000483639,
+            "location": "Feature_Repo/POC/Test001.feature:11"
+          },
+          {
+            "duration": 0.000430864,
+            "location": "Feature_Repo/POC/Test001.feature:11"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Validate response \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "Validate response \"200\"",
+        "aggregatedDurations": {
+          "average": 0.069619511,
+          "median": 0.069619511
+        },
+        "durations": [
+          {
+            "duration": 0.069619511,
+            "location": "Feature_Repo/POC/Test001.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^verify the (\\d+)$",
+    "steps": [
+      {
+        "name": "verify the 200",
+        "aggregatedDurations": {
+          "average": 0.007796168,
+          "median": 0.007796168
+        },
+        "durations": [
+          {
+            "duration": 0.007796168,
+            "location": "Feature_Repo/POC/Test001.feature:14"
+          }
+        ]
+      },
+      {
+        "name": "verify the 400",
+        "aggregatedDurations": {
+          "average": 0.001620488,
+          "median": 0.001620488
+        },
+        "durations": [
+          {
+            "duration": 0.001620488,
+            "location": "Feature_Repo/POC/Test001.feature:14"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Perform POST request$",
+    "steps": [
+      {
+        "name": "Perform POST request",
+        "aggregatedDurations": {
+          "average": 0.398217855,
+          "median": 0.398217855
+        },
+        "durations": [
+          {
+            "duration": 0.406304917,
+            "location": "Feature_Repo/POC/Test001.feature:13"
+          },
+          {
+            "duration": 0.390130793,
+            "location": "Feature_Repo/POC/Test001.feature:13"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Use sheet \"([^\"]*)\" and (\\d+) and (\\d+)$",
+    "steps": [
+      {
+        "name": "Use sheet \"Sample\" and 0 and 0",
+        "aggregatedDurations": {
+          "average": 0.170730524,
+          "median": 0.170730524
+        },
+        "durations": [
+          {
+            "duration": 0.170730524,
+            "location": "Feature_Repo/POC/Test001.feature:12"
+          }
+        ]
+      },
+      {
+        "name": "Use sheet \"Sample\" and 0 and 2",
+        "aggregatedDurations": {
+          "average": 0.007848846,
+          "median": 0.007848846
+        },
+        "durations": [
+          {
+            "duration": 0.007848846,
+            "location": "Feature_Repo/POC/Test001.feature:12"
+          }
+        ]
+      }
+    ]
+  }
+]
