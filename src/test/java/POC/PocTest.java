@@ -38,7 +38,7 @@ public class PocTest {
 
 	@Before
 	public static void StatupConfig() throws IOException {
-		FileInputStream PropPath = new FileInputStream("/home/test/ApiAutomation/src/test/java/GenericRepository.properties");
+		FileInputStream PropPath = new FileInputStream("src/test/java/GenericRepository.properties");
 		Property.load(PropPath);
 		
 		htmlReporter = new ExtentHtmlReporter(RootFolder + Property.getProperty("TestReport"));
